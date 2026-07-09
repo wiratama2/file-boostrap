@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="id">
+<head> <link href="bootstrap-5.3.8-dist/" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Profil - LKP TIARA</title>
+
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#f8fafc;
+}
+
+/* TOPBAR */
+
+.topbar{
+background:#2563eb;
+color:white;
+padding:10px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.topbar a{
+color:white;
+margin-left:10px;
+text-decoration:none;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 5%;
+background:rgba(249, 237, 237, 0.961);
+box-shadow:0 3px 15px rgba(0,0,0,.1);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo img{
+width:70px;
+height:70px;
+border-radius:50%;
+}
+
+.logo h2{
+color:#ff69b4;
+}
+
+.logo p{
+font-size:13px;
+}
+
+.menu{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+.menu a{
+text-decoration:none;
+color:#222;
+font-weight:600;
+transition:.3s;
+}
+
+.menu a:hover,
+.menu .active{
+color:#2563eb;
+}
+
+/* HEADER */
+
+.page-header{
+height:300px;
+background:linear-gradient(rgba(37,99,235,.8),
+rgba(105, 133, 255, 0.7)),
+url("gambar/BGDEPAN.jfif");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+}
+
+.page-header h1{
+font-size:55px;
+}
+
+/* SECTION */
+
+section{
+padding:80px 10%;
+}
+
+.title{
+text-align:center;
+margin-bottom:40px;
+font-size:40px;
+color:#2563eb;
+}
+
+/* PROFIL */
+
+.profil{
+background:white;
+border-radius:15px;
+padding:40px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.profil p{
+font-size:18px;
+line-height:1.8;
+}
+
+/* VISI MISI */
+
+.vm-container{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+margin-top:30px;
+}
+
+.box{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.box h3{
+color:#ff69b4;
+margin-bottom:15px;
+}
+
+/* STRUKTUR */
+
+.struktur{
+background:white;
+padding:40px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.struktur img{
+width:100%;
+max-width:800px;
+margin-top:20px;
+}
+
+/* ==========================
+   SYARAT PENDAFTARAN
+========================== */
+
+.syarat{
+    max-width:1100px;
+    margin:60px auto;
+    padding:40px;
+    background:#ffffff;
+    border-radius:18px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.syarat h2{
+    text-align:center;
+    color:#2563eb;
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.syarat p{
+    text-align:center;
+    color:#666;
+    margin-bottom:35px;
+}
+
+.syarat-list{
+    list-style:none;
+    padding:0;
+}
+
+.syarat-list li{
+    display:flex;
+    align-items:flex-start;
+    gap:15px;
+    margin-bottom:20px;
+    padding:18px;
+    background:#f8f9ff;
+    border-left:6px solid #ff69b4;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.syarat-list li:hover{
+    background:#ffe6f2;
+    transform:translateX(8px);
+}
+
+.nomor{
+    width:40px;
+    height:40px;
+    background:#2563eb;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    flex-shrink:0;
+}
+
+.syarat-list span{
+    font-size:17px;
+    color:#333;
+    line-height:1.7;
+}
+
+.catatan{
+    margin-top:35px;
+    text-align:center;
+    background:#2563eb;
+    color:white;
+    padding:20px;
+    border-radius:12px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+
+.syarat{
+    padding:20px;
+}
+
+.syarat h2{
+    font-size:28px;
+}
+
+.syarat-list span{
+    font-size:15px;
+}
+
+}
+
+/* FOOTER */
+
+footer{
+background:#111827;
+color:white;
+margin-top:50px;
+}
+
+.footer-content{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+padding:50px 10%;
+}
+
+.footer-content h3{
+margin-bottom:15px;
+color:#ff69b4;
+}
+
+.footer-content ul{
+list-style:none;
+}
+
+.footer-content ul li{
+margin-bottom:10px;
+}
+
+.copyright{
+text-align:center;
+padding:20px;
+background:#0f172a;
+}
+
+@media(max-width:768px){
+
+.navbar{
+flex-direction:column;
+}
+
+.menu{
+flex-wrap:wrap;
+justify-content:center;
+margin-top:15px;
+}
+
+.vm-container{
+grid-template-columns:1fr;
+}
+
+.page-header h1{
+font-size:40px;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- TOPBAR -->
+
+<div class="topbar">
+<div>
+<i class="fas fa-phone"></i> 0831-8853-3044
+</div>
+
+<div>
+<a href="https://www.instagram.com/lkp_tiara?igsh=OXJwYjRuMzA5ZWFh"><i class="fab fa-instagram"></i></a>
+</div>
+</div>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<div class="logo">
+
+<img src="gambar/logolkp(1).jpg" alt="Logo">
+
+<div>
+<h2>LKP TIARA</h2>
+<p>Lembaga Kursus Dan Pelatihan Menjahit</p>
+<p>NPSN K9999151</p>
+</div>
+
+</div>
+
+<ul class="menu">
+<li><a href="index.html">Beranda</a></li>
+<li><a href="profillkp.html">Profil</a></li>
+<li><a href="programlkp.html">Program</a></li>
+<li><a href="fasilitaslkp.html">Fasilitas</a></li>
+<li><a href="galerilkp.html">Galeri</a></li>
+<li><a href="kontak.html">Kontak</a></li>
+<li><a href="berita.html">Berita</a></li>
+</ul>
+
+</nav>
+
+<!-- HEADER -->
+
+<div class="page-header">
+<div>
+<h1>Profil LKP TIARA</h1>
+<p>Dari selembar kain lahir karya yang penuh makna.
+     Bersama LKP Tiara, jadikan kreativitas Anda menjadi prestasi.</p>
+</div>
+</div>
+
+<!-- PROFIL -->
+
+<section>
+
+<h2 class="title">Tentang Kami</h2>
+
+<div class="profil">
+
+<p>
+Lembaga ini berdiri sejak tahun 2000 awalnya merupakan usaha
+menjahit biasa dengan nama sis fashion. Seiiring perkembangan zaman
+dan meningkatkan kebutuhan keterampilan menjahit, usaha tersebut
+berkembang menjadi LKP TIARA dan diizinkan oleh dinas pendidikan.
+Selama kurang lebih 26 tahun lembaga mengalami berbagai tantangan dan
+perkembangan hingga mencapai kondisi saat ini.
+</p>
+
+<br>
+
+<p>
+Dengan tenaga pengajar/instruktur yang berpengalaman dan fasilitas yang memadai,
+LKP Tiara berkomitmen mencetak lulusan yang kompeten,
+mandiri, dan siap bersaing di dunia kerja maupun wirausaha.
+</p>
+
+</div>
+
+</section>
+
+<!-- VISI MISI -->
+
+<section>
+
+<h2 class="title">Visi & Misi</h2>
+
+<div class="vm-container">
+
+<div class="box">
+
+<h3>Visi</h3>
+
+<p>
+Menjadikan kursus menjahit LKP Tiara sebagai wadah yang berkualitas sumber daya manusia (SDM)
+yang siap kerja sesuai dengan keahlian yang dimiliki.
+</p>
+
+</div>
+
+<div class="box">
+
+<h3>Misi</h3>
+
+<ul>
+<li>Membimbing dan melatih masyarakat / siswa agar memiliki keterampilan terutama bagi yang putus sekolah.</li>
+<li>Mendidik warga masyarakat agar menjadi wirausaha terutama di bidang tata busana.</li>
+<li>Membimbing warga belajar ke arah profesional sehingga mampu bersaing secara lokal maupun nasional.</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- STRUKTUR -->
+
+<section>
+
+<h2 class="title">Struktur Organisasi</h2>
+
+<div class="struktur">
+
+<h3>Struktur Pengelola LKP Tiara</h3>
+
+<img src="gambar/struktur organisasi lkp.png" alt="Struktur Organisasi">
+
+</div>
+
+</section>
+
+<section class="syarat">
+
+<h2>Syarat Pendaftaran</h2>
+
+<p>Persyaratan yang harus dipenuhi calon peserta LKP TIARA.</p>
+
+<ul class="syarat-list">
+
+<li>
+<div class="nomor">1</div>
+<span>Mengisi formulir pendaftaran yang telah disediakan oleh LKP TIARA.</span>
+</li>
+
+<li>
+<div class="nomor">2</div>
+<span>Membayar biaya pendaftaran sebesar <b>Rp50.000</b>.</span>
+</li>
+
+<li>
+<div class="nomor">3</div>
+<span>Melampirkan fotokopi KTP sebanyak <b>2 lembar</b> (jika sudah memiliki KTP).</span>
+</li>
+
+<li>
+<div class="nomor">4</div>
+<span>Melampirkan fotokopi Kartu Keluarga (KK) sebanyak <b>1 lembar</b>.</span>
+</li>
+
+<li>
+<div class="nomor">5</div>
+<span>Melampirkan fotokopi ijazah terakhir sebanyak <b>1 lembar</b>.</span>
+</li>
+
+<li>
+<div class="nomor">6</div>
+<span>Menyerahkan pas foto berwarna ukuran <b>3 × 4 sebanyak 4 lembar</b>.</span>
+</li>
+
+<li>
+<div class="nomor">7</div>
+<span>Bersedia mematuhi seluruh tata tertib yang berlaku di LKP TIARA.</span>
+</li>
+
+</ul>
+
+<div class="catatan">
+🎓 TIDAK ADA BATASAN USIA
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-content">
+
+<div>
+<h3>LKP TIARA</h3>
+<p>
+Lembaga Kursus dan Pelatihan yang profesional,
+modern dan terpercaya.
+</p>
+</div>
+
+<div>
+<h3>Menu</h3>
+<ul>
+<li>Beranda</li>
+<li>Profil</li>
+<li>Program Pelatihan</li>
+<li>Fasilitas</li>
+<li>Galeri</li>
+<li>Berita</li>
+</ul>
+</div>
+
+<div>
+<h3>Kontak</h3>
+<p>📍 BINJAI, Sumatera Utara</p>
+<p>📞 0831-8853-3044</p>
+</div>
+
+</div>
+
+<hr class="border-light">
+
+<div class="copyright">
+© 2026 LKP TIARA | All Rights Reserved
+</div>
+
+</footer>
+
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

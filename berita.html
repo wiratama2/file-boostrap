@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="id">
+<head> <link href="bootstrap-5.3.8-dist/" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Berita | LKP TIARA</title>
+
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#f5f7fb;
+}
+
+/* TOPBAR */
+
+.topbar{
+background:#2563eb;
+color:#fff;
+padding:10px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+font-size:14px;
+}
+
+.topbar a{
+color:white;
+margin-left:12px;
+text-decoration:none;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 5%;
+background:rgba(249, 237, 237, 0.961);
+box-shadow:0 3px 15px rgba(0,0,0,.08);
+position:sticky;
+top:0;
+z-index:999;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo img{
+width:70px;
+height:70px;
+border-radius:50%;
+}
+
+.logo h2{
+color:#ff69b4;
+}
+
+.logo p{
+font-size:13px;
+color:#060000;
+}
+
+.menu{
+display:flex;
+list-style:none;
+gap:28px;
+}
+
+.menu a{
+text-decoration:none;
+color:#222;
+font-weight:600;
+transition:.3s;
+}
+
+.menu a:hover,
+.menu .active{
+color:#2563eb;
+}
+
+/* HEADER */
+
+.header{
+height:300px;
+background:linear-gradient(rgba(37,99,235,.75),rgba(255,105,180,.75)),
+url("gambar/BGDEPAN.jfif");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.header h1{
+font-size:55px;
+}
+
+.header p{
+font-size:18px;
+margin-top:10px;
+}
+
+/* SECTION */
+
+section{
+padding:80px 10%;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+color:#2563eb;
+margin-bottom:50px;
+}
+
+/* BERITA */
+
+.berita-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.berita-card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+transition:.4s;
+}
+
+.berita-card:hover{
+transform:translateY(-10px);
+}
+
+.berita-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.berita-card h3{
+padding:15px;
+color:#ff69b4;
+}
+
+.berita-card p{
+padding:0 15px 20px;
+line-height:1.8;
+}
+
+
+/* FOOTER */
+
+footer{
+margin-top:50px;
+background:#111827;
+color:white;
+}
+
+.footer-content{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+padding:50px 8%;
+}
+
+.footer-content h3{
+color:#ff69b4;
+margin-bottom:15px;
+}
+
+.footer-content ul{
+list-style:none;
+}
+
+.footer-content li{
+margin-bottom:10px;
+}
+
+.copyright{
+background:#0f172a;
+padding:18px;
+text-align:center;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.navbar{
+flex-direction:column;
+}
+
+.menu{
+margin-top:20px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.container{
+grid-template-columns:1fr;
+}
+
+.header h1{
+font-size:40px;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- TOPBAR -->
+
+<div class="topbar">
+<div>
+<i class="fas fa-phone"></i> 0831-8853-3044
+</div>
+
+<div>
+<a href="https://www.instagram.com/lkp_tiara?igsh=OXJwYjRuMzA5ZWFh"><i class="fab fa-instagram"></i></a>
+</div>
+</div>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<div class="logo">
+<img src="gambar/logolkp(1).jpg">
+<div class="logo-text">
+<h2>LKP TIARA</h2>
+<p>Lembaga Kursus Dan Pelatihan Menjahit</p>
+<p>NPSN K9999151</p>
+</div>
+</div>
+
+
+<ul class="menu">
+<li><a href="index.html">Beranda</a></li>
+<li><a href="profillkp.html">Profil</a></li>
+<li><a href="programlkp.html">Program</a></li>
+<li><a href="fasilitaslkp.html">Fasilitas</a></li>
+<li><a href="galerilkp.html">Galeri</a></li>
+<li><a href="kontak.html">Kontak</a></li>
+<li><a href="berita.html">Berita</a></li>
+</ul>
+
+</nav>
+
+<!-- HEADER -->
+
+<div class="header">
+
+<div>
+
+<h1>BERITA LKP TIARA</h1>
+
+<p>Informasi terbaru mengenai kegiatan dan pelatihan LKP Tiara.</p>
+
+</div>
+
+</div>
+
+<!--BERITA -->
+
+<section>
+
+<h2 class="title">Berita Pelatihan</h2>
+
+<div class="berita-grid">
+
+<div class="berita-card">
+<img src="gambar/piagam 2.jpeg">
+<h3>Desember 2024</h3>
+<p>
+LKP Tiara terus berkomitmen memberikan pendidikan dan pelatihan berkualitas.
+ Berbagai penghargaan yang telah diraih menjadi bukti atas dedikasi, kerja keras,
+ dan kepercayaan masyarakat terhadap kualitas layanan yang kami berikan. 
+ Prestasi ini menjadi motivasi bagi kami untuk terus
+ meningkatkan mutu pendidikan dan mencetak lulusan yang kompeten.
+</p>
+</div>
+
+<div class="berita-card">
+<img src="gambar/piagam 1.jpeg">
+<h3>Desember 2025</h3>
+<p>
+Prestasi yang kami raih mencerminkan komitmen LKP Tiara dalam menghadirkan 
+pelatihan yang berkualitas, profesional,
+dan sesuai dengan kebutuhan dunia kerja. 
+Kepercayaan dari berbagai pihak menjadi motivasi bagi kami untuk terus berkembang 
+dan memberikan kontribusi terbaik dalam meningkatkan kualitas sumber daya manusia.
+</p>
+</div>
+
+<div class="berita-card">
+<img src="gambar/fashion show 2.jpeg">
+<h3>Oktober 2025</h3>
+<p>
+Siswa LKP TIARA Mengikuti acara Fashion Show
+</p>
+</div>
+
+<div class="berita-card">
+<img src="gambar/fashion show 1.jpeg">
+<h3>Mei 2026</h3>
+<p>
+Siswa LKP TIARA Mengikuti acara Fashion Show
+</p>
+</div>
+
+
+<div class="berita-card">
+<img src="gambar/mahasiswa itb.jpeg">
+<h3>Juni 2026</h3>
+<p>
+Mahasiswa ITB INDONESIA Wawancara tentang MSDM di LKP TIARA
+</p>
+</div>
+
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-content">
+
+<div>
+<h3>LKP TIARA</h3>
+<p>
+Lembaga Kursus dan Pelatihan yang profesional,
+modern dan terpercaya.
+</p>
+</div>
+
+<div>
+<h3>Menu</h3>
+<ul>
+<li>Beranda</li>
+<li>Profil</li>
+<li>Program</li>
+<li>Fasilitas</li>
+<li>Galeri</li>
+<li>Berita</li>
+</ul>
+</div>
+
+<div>
+<h3>Kontak</h3>
+<p>📍 BINJAI, Sumatera Utara</p>
+<p>📞 0831-8853-3044</p>
+</div>
+
+
+</div>
+<hr class="border-light">
+
+<div class="copyright">
+© 2026 LKP Tiara. All Rights Reserved.
+</div>
+
+</footer>
+
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
